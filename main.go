@@ -14,7 +14,7 @@ func main() {
 	r.PUT("/api/mahasiswa/:id" , mahasiswa_controller.Update)
 	r.POST("/api/mahasiswa" , mahasiswa_controller.Create)
 	r.DELETE("/api/mahasiswa/:id" , mahasiswa_controller.Delete)
-	// r.GET("/api/mahasiswa/:id/*any" , mahasiswa_controller.AnyPath)
+	r.GET("/api/mahasiswa/:id/*any" , mahasiswa_controller.AnyPath)
 
 	r.Run()
 }
